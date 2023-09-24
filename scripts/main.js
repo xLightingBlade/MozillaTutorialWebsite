@@ -17,7 +17,7 @@ let myHeading = document.querySelector("h1");
       setUserName();
     } else {
       localStorage.setItem("name", myName);
-      myHeading.textContent = `Mozilla is cool, ${myName}`;
+      myHeading.textContent = `Gurren Lagann è fichissimo, ${myName}`;
     }
   }
   
@@ -25,7 +25,7 @@ if (!localStorage.getItem("name")) {
     setUserName();
 } else {
     const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Mozilla is cool, ${storedName}`;
+    myHeading.textContent = `Gurren Lagann è fichissimo, ${storedName}`;
 }
 
 myButton.onclick = () => {
